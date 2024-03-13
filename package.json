@@ -8,11 +8,12 @@
     "/dist"
   ],
   "scripts": {
-    "build": "npm run check && npm run lint && tsc",
+    "build": "tsc",
     "test": "jest",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "check": "prettier --ignore-path .gitignore -c \"**/*.+(js|ts|json)\"",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "npm run build"
   },
   "author": "Willian Carlos Agostini",
   "license": "MIT",
